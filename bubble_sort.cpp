@@ -41,6 +41,11 @@ int main() {
     int n = 10;  // Número de elementos no vetor
     int v[] = {34, 7, 23, 32, 5, 62, 32, 32, 12, 56}; // Vetor fixo com 10 elementos
 
+    scanf("%d", &n);
+    
+    for(int i = 0; i < n; i++) {
+        scanf("%d", &v[i]);
+    }
     // Imprime o vetor original
     printf("Vetor original:\n");
     imprimirVetor(v, n);  // Chama a função imprimirVetor para exibir o vetor antes da ordenação
