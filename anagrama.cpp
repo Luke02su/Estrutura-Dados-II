@@ -32,9 +32,10 @@ bool anagrama(char s1[], char s2[]) {
     bubbleSort(s1, len1);
     bubbleSort(s2, len2);
 
-    for (int i = 0; i < len1; i++) {
-        if (s1[i] != s2[i])
+    for (int i = 0; i < len1; i++) { //pode ser len1 ou len2, pois ambos já estão ordenados de maneira igual, caso tenham a mesa quantidade de letas e as mesmas letras, mas em ordem diferente
+        if (s1[i] != s2[i]) {
             return false;
+        }
     }
     return true;
 }
